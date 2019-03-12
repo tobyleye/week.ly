@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0, width=device-width">
+	<title>Calender App</title>
+	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.8/vue.min.js"></script>
+</head>
+<body>
+	<div id="app">
+		<header>
+			<h1 class="title">Week.ly</h1>
+			<p>Manage and plan your weekly events</p>
+		</header>
+		<calendar-week></calendar-week>
+		<calendar-entry></calendar-entry>
+	</div>
+
+	<script src="js/template.js"></script>
+	<script src="js/store.js"></script>
+	<script src="js/calendar-event.js"></script>
+	<script src="js/calendar-day.js"></script>
+	<script src="js/calendar-entry.js"></script>
+	<script src="js/calendar-week.js"></script>
+	<script type="text/javascript">
+		const App = new Vue({
+			el: '#app',
+			components: {
+				'calendar-week': CalendarWeek,
+				'calendar-entry': CalendarEntry,
+			}
+		})
+	</script>
+</body>
+</html>
