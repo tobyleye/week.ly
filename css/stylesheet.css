@@ -202,12 +202,3 @@ header p {
 	background: none;
 	display: inline-block;
 }
-
-@keyframes fadeIn {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
-}
