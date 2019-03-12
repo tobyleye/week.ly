@@ -1,3 +1,3 @@
 Week.ly
 -------
-A beautiful & simple weekly event manager.
+Manage and plan your weekly events. (Built with Vue) 
